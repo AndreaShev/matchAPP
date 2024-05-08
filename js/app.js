@@ -24,6 +24,34 @@
             }));
         }
     }), 0);
+    const contentContainer = document.getElementById("content-container");
+    const backButton = contentContainer.getElementsByClassName("back-button");
+    const nextButton = contentContainer.getElementsByClassName("next-button");
+    const contents = contentContainer.getElementsByClassName("content");
+    let currentContentIndex = 0;
+    function showContent(index) {
+        for (let i = 0; i < contents.length; i++) contents[i].classList.remove("show");
+        contents[index].classList.add("show");
+        if (index <= 1) {
+            for (let i = 0; i < backButton.length; i++) backButton[i].style.display = "none";
+            for (let i = 0; i < nextButton.length; i++) nextButton[i].style.display = "block";
+        } else {
+            for (let i = 0; i < backButton.length; i++) backButton[i].style.display = "block";
+            for (let i = 0; i < nextButton.length; i++) nextButton[i].style.display = "block";
+        }
+        if (index === contents.length - 1) for (let i = 0; i < nextButton.length; i++) nextButton[i].disabled = true; else for (let i = 0; i < nextButton.length; i++) nextButton[i].disabled = false;
+    }
+    for (let i = 0; i < backButton.length; i++) backButton[i].addEventListener("click", (function() {
+        currentContentIndex--;
+        if (currentContentIndex < 0) currentContentIndex = contents.length - 1;
+        showContent(currentContentIndex);
+    }));
+    for (let i = 0; i < nextButton.length; i++) nextButton[i].addEventListener("click", (function() {
+        currentContentIndex++;
+        if (currentContentIndex >= contents.length) currentContentIndex = 0;
+        showContent(currentContentIndex);
+    }));
+    showContent(currentContentIndex);
     window["FLS"] = true;
     isWebp();
 })();

@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>match</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240508150144" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<div class="profile-create" id="content-container">
+			<div class="profile-create__card card content" id="content-1">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Add photo</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will analize you</p>
+					</div>
+					<div class="profile-create__photoblock photoblock">
+						<div class="photoblock__bigphoto">
+							<img src="img/profile-create/big_photo.svg" alt="big__photo" />
+							<span class="photoblock__text"> add photo</span>
+							<span class="photoblock__text photoblock__text-opacity">(max 10)</span>
+						</div>
+						<div class="photoblock__gallery">
+							<div class="photoblock__smallphoto">
+								<img src="img/profile-create/small_photo1.svg" alt="photo" />
+							</div>
+							<div class="photoblock__smallphoto">
+								<img src="img/profile-create/small_photo2.svg" alt="photo" />
+							</div>
+							<div class="photoblock__smallphoto">
+								<img src="img/profile-create/small_photo2.svg" alt="photo" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="profile-create__card card content" id="content-2">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Add photo</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will analize you</p>
+					</div>
+					<div class="profile-create__photoblock photoblock">
+						<div class="photoblock__bigphoto">
+							<picture><source srcset="img/profile-create/bigphoto-profile2.webp" type="image/webp"><img src="img/profile-create/bigphoto-profile2.png" alt="big__photo" /></picture>
+						</div>
+						<div class="photoblock__gallery">
+							<div class="photoblock__smallphoto">
+								<img src="img/profile-create/small_photo2.svg" alt="photo" />
+							</div>
+							<div class="photoblock__smallphoto">
+								<picture><source srcset="img/profile-create/smallphoto-1-profile2.webp" type="image/webp"><img src="img/profile-create/smallphoto-1-profile2.png" alt="photo" /></picture>
+							</div>
+							<div class="photoblock__smallphoto">
+								<picture><source srcset="img/profile-create/smallphoto-2-profile2.webp" type="image/webp"><img src="img/profile-create/smallphoto-2-profile2.png" alt="photo" /></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="profile-create__card card content" id="content-3">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Personal data</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">Let AI to know you better</p>
+					</div>
+					<div class="profile-create__inputs inputs-profile-create">
+						<input class="inputs-profile-create__name" type="text" placeholder="Name*" />
+						<input class="inputs-profile-create__date" type="text" placeholder="Date of birth*" />
+						<p class="inputs-profile-create__text">
+							we don't show your exact birth date in the profile. It's used for our
+							AI algorithms to uplift quality of your matches.
+						</p>
+						<ul class="inputs-profile-create__list">
+							<li>
+								<input class="inputs-profile-create__radio" type="radio" id="gender_man" name="gender" value="man" />
+								<label for="gender_man">Man</label>
+							</li>
+							<li>
+								<input class="inputs-profile-create__radio" type="radio" id="gender_woman" name="gender" value="woman" />
+								<label for="gender_woman">Woman</label>
+							</li>
+							<li>
+								<input class="inputs-profile-create__radio" type="radio" id="gender_other" name="gender" value="other" />
+								<label for="gender_other">Other</label>
+							</li>
+						</ul>
+						<input class="inputs-profile-create__city" type="text" id="city" placeholder="City*" />
+					</div>
+				</div>
+
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-4">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Goals</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you people with same goals</p>
+					</div>
+				</div>
+				<div class="goal-checkbox">
+					<ul class="goal-checkbox__list">
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal1" name="goal" value="goal1" />
+							<label for="goal1">Date</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal2" name="goal" value="goal2" />
+							<label for="goal2">Long-term relationship</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal3" name="goal" value="goal3" />
+							<label for="goal3">Friendship</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal4" name="goal" value="goal4" />
+							<label for="goal4">Communication</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal5" name="goal" value="goal5" />
+							<label for="goal5">Business partner</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal6" name="goal" value="goal6" />
+							<label for="goal6">Travel partner</label>
+						</li>
+						<li class="goal-checkbox__switch">
+							<span class="goal-checkbox__text" for="goal7">Do not show in profile</span>
+
+							<label class="goal__toggle toggle">
+								<input type="checkbox" class="checkbox" />
+								<span class="toggle-slider"></span>
+							</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-5">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Preferences</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you people with same goals</p>
+					</div>
+				</div>
+				<div class="preferences">
+					<p class="preferences__title title">Who are you looking for</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_man" name="gender" value="man" />
+							<label for="gender_man">Man</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_woman" name="gender" value="woman" />
+							<label for="gender_woman">Woman</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_other" name="gender" value="Both" />
+							<label for="gender_other">Both</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_other" name="gender" value="Doesn't matter" />
+							<label for="gender_other">Doesn't matter</label>
+						</li>
+					</ul>
+					<ul class="goal-checkbox__list">
+						<li class="goal-checkbox__switch">
+							<span class="goal-checkbox__text" for="goal7">Do not show in profile</span>
+
+							<label class="goal__toggle toggle">
+								<input type="checkbox" class="checkbox" />
+								<span class="toggle-slider"></span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-6">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Values (top 3)</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you perfect match</p>
+					</div>
+				</div>
+				<ul class="values">
+					<li><button class="value value-active">Love</button></li>
+					<li><button class="value">Health</button></li>
+					<li><button class="value">Balance</button></li>
+					<li><button class="value">Helping Others</button></li>
+					<li><button class="value value-active">Closeness</button></li>
+					<li><button class="value">Loyalty</button></li>
+					<li><button class="value">Safety</button></li>
+					<li><button class="value">Family</button></li>
+					<li><button class="value value-active">Children</button></li>
+					<li><button class="value">Trust</button></li>
+					<li><button class="value">Parents</button></li>
+					<li><button class="value">Friends</button></li>
+					<li><button class="value">Sincerity</button></li>
+					<li><button class="value">Curiosity</button></li>
+					<li><button class="value">Beauty</button></li>
+					<li><button class="value">Enthusiasm</button></li>
+					<li><button class="value">Learning New Things</button></li>
+					<li><button class="value">Personal Growth</button></li>
+					<li><button class="value">Self-Actualization</button></li>
+					<li><button class="value">Work</button></li>
+					<li><button class="value">Passion</button></li>
+					<li><button class="value">Joy</button></li>
+					<li><button class="value">Freedom</button></li>
+					<li><button class="value">Spontaneity</button></li>
+					<li><button class="value">Passion</button></li>
+					<li><button class="value">Money</button></li>
+					<li><button class="value">Creativity</button></li>
+					<li><button class="value">Harmony</button></li>
+					<li><button class="value">Comfort</button></li>
+				</ul>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-7">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Answer questions</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you perfect match</p>
+					</div>
+				</div>
+				<div class="answer-questions">
+					<p class="answer-questions__title title">Where do you prefer to live</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_man" name="gender" value="man" />
+							<label for="gender_man">In a big city</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_woman" name="gender" value="woman" />
+							<label for="gender_woman">In the suburbs</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_other" name="gender" value="Both" />
+							<label for="gender_other">Far away from people</label>
+						</li>
+					</ul>
+					<p class="answer-questions__title title">Ideal vacation</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="Organized tour" name="vacation" value="Organized tour" />
+							<label for="Organized tour">Organized tour</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="All-inclusive hotel" name="vacation" value="All-inclusive hotel" />
+							<label for="All-inclusive hotel">All-inclusive hotel</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="Backpacking adventure" name="vacation" value="Backpacking adventure" />
+							<label for="Backpacking adventure">Backpacking adventure</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="By the sea" name="vacation" value="By the sea" />
+							<label for="By the sea">By the sea</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="Active leisure" name="vacation" value="Active leisure" />
+							<label for="Active leisure">Active leisure</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="Museums" name="vacation" value="Museums" />
+							<label for="Museums">Museums, local attractions</label>
+						</li>
+					</ul>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-8">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Answer questions (2 options)</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you perfect match</p>
+					</div>
+				</div>
+				<div class="answer-questions">
+					<p class="answer-questions__title title">How do you know that another person</br> loves you?</p>
+					<ul class="goal-checkbox__list">
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal1" name="goal" value="goal1" />
+							<label for="goal1">Makes time for you</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal2" name="goal" value="goal2" />
+							<label for="goal2"> <label for="goal3">Physically close to you, such as hugging,</br> holding hands</label>
+							</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal3" name="goal" value="goal3" />
+							<label for="goal3">Say compliments, words of encouragement,</br> and support</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal4" name="goal" value="goal4" />
+							<label for="goal4">Thoughtful gifts show they care</label>
+						</li>
+						<li>
+							<input class="goal-checkbox__item" type="checkbox" id="goal5" name="goal" value="goal5" />
+							<label for="goal5">Do things to make your life easier or more enjoyable</label>
+						</li>
+
+					</ul>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+
+			</div>
+			<div class="profile-create__card card content" id="content-9">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Choose an option</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you perfect match</p>
+					</div>
+				</div>
+				<div class="answer-questions">
+					<p class="answer-questions__title title">Where do you prefer to eat?</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_man" name="gender" value="man" />
+							<label for="gender_man">Street food</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_woman" name="gender" value="woman" />
+							<label for="gender_woman">A fancy restaurant</label>
+						</li>
+
+					</ul>
+					<p class="answer-questions__title title">What do you prefer to visit?</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="Organized tour" name="vacation" value="Organized tour" />
+							<label for="Organized tour">Beach</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="All-inclusive hotel" name="vacation" value="All-inclusive hotel" />
+							<label for="All-inclusive hotel">Museum</label>
+						</li>
+
+					</ul>
+					<p class="answer-questions__title title">After work</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="job1" name="job" value="job1">
+							<label for="job1">Meeting friends</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="job2" name="job" value="job2">
+							<label for="job2">Dinner at home</label>
+						</li>
+
+					</ul>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-10">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Choose an option</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you perfect match</p>
+					</div>
+				</div>
+				<div class="answer-questions">
+					<p class="answer-questions__title title">What is best?</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_man" name="gender" value="man" />
+							<label for="gender_man"> <label for="gender_man">Dinner with family</label>
+							</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="gender_woman" name="gender" value="woman" />
+							<label for="gender_woman">A romantic date</label>
+						</li>
+
+					</ul>
+					<p class="answer-questions__title title">You generally prefer</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="Organized tour" name="vacation" value="Organized tour" />
+							<label for="Organized tour">Sleep more</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="All-inclusive hotel" name="vacation" value="All-inclusive hotel" />
+							<label for="All-inclusive hotel">Watch the sunrise</label>
+						</li>
+
+					</ul>
+					<p class="answer-questions__title title">Spend the day off</p>
+					<ul class="inputs-profile-create__list">
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="job1" name="job" value="job1">
+							<label for="job1">Actively outdoors</label>
+						</li>
+						<li>
+							<input class="inputs-profile-create__radio" type="radio" id="job2" name="job" value="job2">
+							<label for="job2">Watching your favorite movie</label>
+						</li>
+
+					</ul>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-11">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>What is more you</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you perfect match</p>
+					</div>
+				</div>
+				<div class="moreyou">
+					<div class="moreyou__row row-moreyou">
+						<div class="row-moreyou__choices">
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+						</div>
+						<div class="row-moreyou__gradation">
+							<span class="row-moreyou__category">On my own</span>
+							<span class="row-moreyou__category">The life of the party</span>
+						</div>
+					</div>
+					<div class="moreyou__row row-moreyou">
+						<div class="row-moreyou__choices">
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+						</div>
+						<div class="row-moreyou__gradation">
+							<span class="row-moreyou__category">Prefer to plan</span>
+							<span class="row-moreyou__category">Live for today</span>
+						</div>
+					</div>
+					<div class="moreyou__row row-moreyou">
+						<div class="row-moreyou__choices">
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+						</div>
+						<div class="row-moreyou__gradation">
+							<span class="row-moreyou__category">Listen to others</span>
+							<span class="row-moreyou__category">Express my own point of view</span>
+						</div>
+					</div>
+					<div class="moreyou__row row-moreyou">
+						<div class="row-moreyou__choices">
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+							<button class="row-moreyou__choice"></button>
+						</div>
+						<div class="row-moreyou__gradation">
+							<span class="row-moreyou__category">Rely more on logic</span>
+							<span class="row-moreyou__category">Intuition</span>
+						</div>
+					</div>
+				</div>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="profile-create__card card content" id="content-12">
+				<div class="profile-create__status-bar status-bar"></div>
+				<div class="profile-create__body">
+					<div class="profile-create__header header">
+						<h1>Interests</h1>
+					</div>
+					<div class="profile-create__progressbar progressbar">
+						<p class="progressbar__text">AI will find you perfect match</p>
+					</div>
+				</div>
+				<ul class="values">
+					<li><button class="value value-active"> <span>Music</span></button></li>
+					<li><button class="value">Rap</button></li>
+					<li><button class="value">Hip-Hop</button></li>
+					<li><button class="value">Jazz</button></li>
+					<li><button class="value">Classical Music</button></li>
+					<li><button class="value value-active">Movies</button></li>
+					<li><button class="value">Mountains</button></li>
+					<li><button class="value">Lord of the Rings</button></li>
+					<li><button class="value">Harry Potter</button></li>
+					<li><button class="value value-active">Star Wars</button></li>
+					<li><button class="value">Politics</button></li>
+					<li><button class="value">Vegan</button></li>
+					<li><button class="value">Vegetarian</button></li>
+					<li><button class="value">Cooking</button></li>
+					<li><button class="value">Travel</button></li>
+					<li><button class="value value-active">Yoga</button></li>
+					<li><button class="value">Running</button></li>
+					<li><button class="value">Hiking</button></li>
+					<li><button class="value">Painting</button></li>
+					<li><button class="value">Photography</button></li>
+					<li><button class="value value-active">Gardening</button></li>
+					<li><button class="value">Biking</button></li>
+					<li><button class="value">Dancing</button></li>
+					<li><button class="value">Wine Tasting</button></li>
+					<li><button class="value">Coffee</button></li>
+					<li><button class="value">Books</button></li>
+					<li><button class="value">Podcasts</button></li>
+					<li><button class="value">Dogs</button></li>
+					<li><button class="value">Cats</button></li>
+					<li><button class="value">Meditation</button></li>
+					<li><button class="value">Fitness</button></li>
+					<li><button class="value">Tech</button></li>
+					<li><button class="value">Gaming</button></li>
+					<li><button class="value">Fashion</button></li>
+					<li><button class="value">Art</button></li>
+					<li><button class="value">Theater</button></li>
+					<li><button class="value">Comedy</button></li>
+					<li><button class="value">Spirituality</button></li>
+					<li><button class="value">Rock Climbing</button></li>
+					<li><button class="value">Surfing</button></li>
+					<li><button class="value">Basketball</button></li>
+					<li><button class="value">Football</button></li>
+					<li><button class="value">Cgess</button></li>
+					<li><button class="value">Anime</button></li>
+					<li><button class="value">Manga</button></li>
+					<li><button class="value">Ceraft Beer</button></li>
+					<li><button class="value">DIY Projects</button></li>
+					<li><button class="value">Poetry</button></li>
+					<li><button class="value">Volunteering</button></li>
+					<li><button class="value">Sci-Fi</button></li>
+					<li><button class="value">Horror Movies</button></li>
+					<li><button class="value">Board Games</button></li>
+					<li><button class="value">Knitting</button></li>
+					<li><button class="value">Crossfit</button></li>
+					<li><button class="value">Skateboarding</button></li>
+					<li><button class="value">Snowboarding</button></li>
+					<li><button class="value">Beach</button></li>
+					<li><button class="value">Bird Watching</button></li>
+					<li><button class="value">Writing</button></li>
+					<li><button class="value">Blogging</button></li>
+					<li><button class="value">History</button></li>
+					<li><button class="value">Antiques</button></li>
+					<li><button class="value">Ceramics</button></li>
+					<li><button class="value">Tattoos</button></li>
+					<li><button class="value">Magic Tricks</button></li>
+					<li><button class="value">Astrology</button></li>
+					<li><button class="value">Astronomy</button></li>
+					<li><button class="value">Paranormal</button></li>
+					<li><button class="value">Geocaching</button></li>
+					<li><button class="value">Fishing</button></li>
+					<li><button class="value">Archery</button></li>
+					<li><button class="value">Bowling</button></li>
+					<li><button class="value">Ice Skating</button></li>
+					<li><button class="value">Motorcycles</button></li>
+					<li><button class="value">Ballet</button></li>
+					<li><button class="value">Opera</button></li>
+					<li><button class="value">Sushi</button></li>
+					<li><button class="value">Baking</button></li>
+					<li><button class="value">Foodie</button></li>
+					<li><button class="value">Robotics</button></li>
+					<li><button class="value">Drones</button></li>
+					<li><button class="value">VR (Virtual Reality)</button></li>
+					<li><button class="value">AR (Augmented Reality)</button></li>
+					<li><button class="value">Sudoku</button></li>
+					<li><button class="value">Puzzles</button></li>
+					<li><button class="value">Rock Music</button></li>
+					<li><button class="value">Country Music</button></li>
+					<li><button class="value">Blues</button></li>
+					<li><button class="value">Sailing</button></li>
+					<li><button class="value">Windsurfing</button></li>
+					<li><button class="value">Kite Surfing</button></li>
+					<li><button class="value">Herbalism</button></li>
+					<li><button class="value">Nature</button></li>
+					<li><button class="value">Woodworking</button></li>
+					<li><button class="value">Jewelry</button></li>
+					<li><button class="value">Investing</button></li>
+					<li><button class="value">Economics</button></li>
+					<li><button class="value">Social Media</button></li>
+				</ul>
+				<div class="profile-create__footer">
+					<a class="profile-create__button back-button">
+						<span>Back</span>
+					</a>
+					<a class="profile-create__button next-button">
+						<span>Finish</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20240508150144"></script>
+</body>
+
+</html>
